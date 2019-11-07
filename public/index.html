@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- ----------------------------------------FIREBASE--------------------------- -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/7.2.2/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/7.2.2/firebase-auth.js"></script>
+  <script defer src="/__/firebase/7.2.2/firebase-database.js"></script>
+  <script defer src="/__/firebase/7.2.2/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/7.2.2/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+
+</head>
+
+<body style="background-color: #171a1c!important;">
+
+  <div id="navbar"></div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Mascote Br</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html">Inicio </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobre.html">Sobre mim</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#projetos">Projetos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#games">Games</a>
+        </li>
+    </div>
+  </nav>
+  <div class="container-fixed">
+    <div class="row">
+      <div class="col-md-12">
+        <img src="Imagens/Background.jpg" style="padding-top: -5%; width: 100%;">
+        <div style="position: absolute; width: 100%; top:95%">
+          <div style="border: white solid 5px; "></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+
+    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100 banner" src="Imagens/forkSlash.jpg" alt="Primeiro Slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 banner" src="Imagens/deepSpace.jpg" alt="Segundo Slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div> -->
+    <div class="row" style="margin-top:-2%;margin-bottom: 10%;">
+      <div class="col-md-12">
+        <img class="ImageRound" src="Imagens/ga.png">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12" style="color: #c9c9c9;">
+        <h2>Mascotebr</h2>
+        <h4>Programando e se divertindo!</h4>
+      </div>
+    </div>
+    <h2 id="games" class="text-light">Games</h2>
+    <hr />
+    <div class="row" style="padding-bottom: 10%;">
+      <div class="col-md-12">
+        <section class="tiles" style="margin-top:5px; padding-top:0px;">
+          <article class="style1">
+            <span class="image" id="seriousscramblersBox">
+              <img src="Imagens/forkslashIcon.jpg" alt="Serious Scramblers" id="seriousscramblersImg">
+            </span>
+            <a href="ForkSlash.html">
+              <h2 class="content panic">Fork Slash</h2>
+              <div class="content">
+                <p>Um Hack and Slash com um fazendeiro protejendo suas ovelhas dos Lobisomens!</p>
+              </div>
+            </a>
+          </article>
+          <article class="style1">
+            <span class="image" id="seriousscramblersBox">
+              <img src="Imagens/deepSpaceIcon.jpg" alt="Serious Scramblers" id="seriousscramblersImg">
+            </span>
+            <a href="DeepSpace.html">
+              <h2 class="content space">Deep Space</h2>
+              <div class="content">
+                <p>Exploração e Shooter de espaço-naves contra 6 raças alienigenas diferentes no espaço!</p>
+              </div>
+            </a>
+          </article>
+
+        </section>
+      </div>
+    </div>
+    <h2 id="projetos" class="text-light">Projetos</h2>
+    <hr />
+    <div class="row" style="padding-bottom: 10%;">
+      <div class="col-md-12">
+        <section class="tiles" style="margin-top:5px; padding-top:0px;">
+          <article class="style1">
+            <span class="image" id="seriousscramblersBox">
+              <img src="Imagens/logo_S.jpg" alt="Serious Scramblers" id="seriousscramblersImg">
+            </span>
+            <a href="SeagullComics.html">
+              <h2 class="content">Seagull Comics</h2>
+              <div class="content">
+                <p>Um aplicativo com o foco de ter uma biblioteca de leitura de quadrinhos!</p>
+              </div>
+            </a>
+          </article>
+
+
+        </section>
+      </div>
+    </div>
+  </div>
+  <footer id="footer">
+    <div class="inner" style="padding-left: 10%;">
+      <section>
+        <h2 style="margin-bottom:0; padding-bottom:0;">Mande um email!</h2>
+        <p style="margin-top:0; padding-top:0;">Seja o primeiro a entrar em contato e trocar umas ideias! 😜</p>
+        <form method="post" action="Email/send_mail.php" id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form" class="validate">
+
+          <div class="field first">
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email" required="">
+            <input type="text" value="" name="MENSAGE" class="email" id="mce-MENSAGE" placeholder="Mensagem"
+              required="">
+            <input type="text" value="" name="NAME" class="email" id="mce-NAME" placeholder="Nome" required="">
+
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                name="b_8504a052d0e066b3f0da75922_1155cf0646" tabindex="-1" value=""></div>
+          </div>
+          <ul class="actions">
+            <li><input type="submit" value="Enviar" class="special"></li>
+          </ul>
+        </form>
+      </section>
+      <section>
+        <h2>Me siga!</h2>
+        <ul class="icons">
+          <li><a href="https://www.facebook.com/ga.con.7564129" class="icon style2 fa fa-facebook-square"
+              target="_blank"><span class="label">Facebook</span></a></li>
+          <li><a href="https://www.instagram.com/mascotebr/" class="icon style2 fa fa-instagram" target="_blank"><span
+                class="label">Instagram</span></a></li>
+          <li><a href="sobre.html" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+        </ul>
+      </section>
+      <ul class="copyright">
+        <li>©MascoteBr. Todos os direitos reservados</li>
+      </ul>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/7.2.2/firebase-app.js"></script>
+  <script src="/__/firebase/init.js"></script>
+
+  <script>
+
+    $(function () {
+      $("#navbar").load("NavNavegation.html");
+    });
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      // // The Firebase SDK is initialized and available here!
+      //
+      // firebase.auth().onAuthStateChanged(user => { });
+      // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+      // firebase.messaging().requestPermission().then(() => { });
+      // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+      //
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+      try {
+        let app = firebase.app();
+        let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+        document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+      } catch (e) {
+        console.error(e);
+        document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+      }
+    });
+  </script>
+</body>
+
+</html>
